@@ -40,5 +40,18 @@ export {
   A2A_WELL_KNOWN_PATH,
 } from './core.js';
 
+// Jobs: registry jobs client (list, read, submit)
+export type {
+  LaxJob,
+  ListJobsParams,
+  ListJobsResult,
+  SubmitInput,
+  SubmissionResult,
+  JobsClientOptions,
+  JobsClient,
+  LaxJobsErrorCode,
+} from './jobs.js';
+export { createJobsClient, LaxJobsError } from './jobs.js';
+
 /** Protocol version constant */
 export const LAX_VERSION = '1.0' as const;
